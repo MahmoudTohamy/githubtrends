@@ -1,0 +1,107 @@
+/** @format */
+
+.repo-row-container {
+  padding: 16px;
+  border-bottom: 1px solid #30363d;
+  font-size: 14px;
+  display: flex;
+  background-color: #0d1117;
+  justify-content: space-between;
+  color: #8b949e;
+  line-height: 1.5;
+  text-align: left;
+
+  &__rightDiv {
+    &__repoUrl {
+      cursor: pointer;
+      display: block;
+      line-height: 1.25;
+      font-weight: 600;
+      font-size: 20px;
+      svg {
+        margin-bottom: -3px;
+        color: #8b949e;
+      }
+      span {
+        color: #58a6ff;
+      }
+      &:hover {
+        span {
+          text-decoration: underline;
+        }
+      }
+    }
+    &__description {
+      margin: 4px 0px;
+    }
+    &__generalInfo {
+      font-size: 12px;
+      margin-top: 8px;
+      span {
+        margin-right: 16px;
+        svg {
+          font-size: 15px;
+          margin-bottom: -3px;
+        }
+      }
+    }
+  }
+  &__leftDiv {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+    &__upperDiv {
+      border-radius: 6px;
+      // border: 1px solid #30363d;
+      // background-color: #21262d;
+      cursor: pointer;
+      // padding: 4px 12px;
+      display: flex;
+      &__starContainer {
+        border: 1px solid #30363d;
+        background-color: #21262d;
+        padding: 7px 12px;
+        border-bottom-left-radius: 6px;
+        border-top-left-radius: 6px;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 500;
+        svg {
+          margin-bottom: -3px;
+          margin-right: 3px;
+          font-size: 16px;
+        }
+        &:hover {
+          border-color: white;
+          background-color: #323841;
+        }
+      }
+      &__dropdownContainer {
+        padding: 7px 12px;
+        border: 1px solid #30363d;
+        background-color: #21262d;
+        border-bottom-right-radius: 6px;
+        border-top-right-radius: 6px;
+        line-height: 20px;
+        svg {
+          font-size: 16px;
+          margin-bottom: -2px;
+          // margin: 5px;
+          // margin-bottom: -3px;
+        }
+        &:hover {
+          border-color: white;
+          background-color: #323841;
+        }
+      }
+    }
+    &__starCont {
+      font-size: 12px;
+      svg {
+        margin-bottom: -2px;
+        font-size: 15px;
+      }
+    }
+  }
+}
